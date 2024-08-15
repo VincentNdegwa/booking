@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "format: {category_name}",
  "creation": "2024-08-15 21:29:16.096749",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -25,10 +26,11 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-08-15 21:30:19.610548",
+ "modified": "2024-08-15 22:04:55.966904",
  "modified_by": "Administrator",
  "module": "Booking",
  "name": "Booking Category",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {
@@ -44,7 +46,10 @@
    "write": 1
   }
  ],
+ "show_title_field_in_link": 1,
  "sort_field": "creation",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "title_field": "category_name",
+ "translated_doctype": 1
 }

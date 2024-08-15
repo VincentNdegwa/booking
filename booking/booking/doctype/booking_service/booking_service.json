@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "format:{service_name}",
  "creation": "2024-08-15 21:25:09.156297",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -54,10 +55,11 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-08-15 21:38:51.661995",
+ "modified": "2024-08-15 22:05:16.024626",
  "modified_by": "Administrator",
  "module": "Booking",
  "name": "Booking Service",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {
@@ -73,7 +75,10 @@
    "write": 1
   }
  ],
+ "show_title_field_in_link": 1,
  "sort_field": "creation",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "title_field": "service_name",
+ "translated_doctype": 1
 }
