@@ -1,0 +1,132 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-08-15 20:56:26.266121",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_mcpc",
+  "amended_from",
+  "client",
+  "booking_date",
+  "start_date",
+  "end_date",
+  "column_break_wjma",
+  "status",
+  "payment_status",
+  "total_amount",
+  "service",
+  "notes"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_mcpc",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Booking",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "client",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Client",
+   "options": "Booking Client",
+   "reqd": 1
+  },
+  {
+   "description": "Date and time when the booking was made",
+   "fieldname": "booking_date",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Booking Date",
+   "reqd": 1
+  },
+  {
+   "description": "When the booking begins",
+   "fieldname": "start_date",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Start Date",
+   "reqd": 1
+  },
+  {
+   "description": "When the booking ends",
+   "fieldname": "end_date",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "End Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_wjma",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "New\nConfirmed\nPending\nCancelled",
+   "reqd": 1
+  },
+  {
+   "fieldname": "payment_status",
+   "fieldtype": "Select",
+   "label": "Payment Status",
+   "options": "Paid\nUnpaid\npending",
+   "reqd": 1
+  },
+  {
+   "default": "0.0",
+   "fieldname": "total_amount",
+   "fieldtype": "Float",
+   "label": "Total Amount",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "service",
+   "fieldtype": "Link",
+   "label": "Service",
+   "options": "Booking Service"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Text",
+   "label": "Notes"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-08-15 21:36:55.819937",
+ "modified_by": "Administrator",
+ "module": "Booking",
+ "name": "Booking",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
