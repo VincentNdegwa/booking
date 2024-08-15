@@ -6,12 +6,16 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "service_details_section",
   "service_name",
   "description",
   "duration",
+  "column_break_wkal",
   "category",
   "price",
-  "max_capacity"
+  "max_capacity",
+  "service_add_ons_section",
+  "add_ons"
  ],
  "fields": [
   {
@@ -51,11 +55,32 @@
    "fieldtype": "Int",
    "label": "Max Capacity",
    "non_negative": 1
+  },
+  {
+   "fieldname": "service_details_section",
+   "fieldtype": "Section Break",
+   "label": "Service Details",
+   "no_copy": 1
+  },
+  {
+   "fieldname": "column_break_wkal",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "service_add_ons_section",
+   "fieldtype": "Section Break",
+   "label": "Service Add Ons"
+  },
+  {
+   "fieldname": "add_ons",
+   "fieldtype": "Table",
+   "label": "Add Ons",
+   "options": "Booking Service Add-ons"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-08-15 22:05:16.024626",
+ "modified": "2024-08-15 23:05:31.239918",
  "modified_by": "Administrator",
  "module": "Booking",
  "name": "Booking Service",
