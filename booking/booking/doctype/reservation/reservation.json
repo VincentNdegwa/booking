@@ -53,7 +53,6 @@
   {
    "fieldname": "duration",
    "fieldtype": "Duration",
-   "in_list_view": 1,
    "label": "Duration",
    "reqd": 1
   },
@@ -71,6 +70,7 @@
    "default": "Unpaid",
    "fieldname": "payment_status",
    "fieldtype": "Select",
+   "in_list_view": 1,
    "label": "Payment Status",
    "options": "Paid\nUnpaid\nPending"
   },
@@ -97,7 +97,8 @@
   {
    "default": "0.0",
    "fieldname": "total_price",
-   "fieldtype": "Currency",
+   "fieldtype": "Float",
+   "in_preview": 1,
    "label": "Total Price",
    "non_negative": 1,
    "read_only": 1,
@@ -107,7 +108,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-08-16 18:43:58.688126",
+ "modified": "2024-08-16 21:18:32.917712",
  "modified_by": "Administrator",
  "module": "Booking",
  "name": "Reservation",

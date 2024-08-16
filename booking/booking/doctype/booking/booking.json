@@ -12,11 +12,12 @@
   "booking_date",
   "start_date",
   "end_date",
-  "column_break_wjma",
   "status",
+  "column_break_wjma",
   "payment_status",
-  "total_amount",
   "service",
+  "edit_price",
+  "total_amount",
   "notes"
  ],
  "fields": [
@@ -86,10 +87,12 @@
   },
   {
    "default": "0.0",
+   "fetch_from": "service.total_price",
    "fieldname": "total_amount",
    "fieldtype": "Float",
    "label": "Total Amount",
    "non_negative": 1,
+   "read_only_depends_on": "eval: doc.edit_price == false",
    "reqd": 1
   },
   {
@@ -102,12 +105,18 @@
    "fieldname": "notes",
    "fieldtype": "Text",
    "label": "Notes"
+  },
+  {
+   "default": "0",
+   "fieldname": "edit_price",
+   "fieldtype": "Check",
+   "label": "Edit Price"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-08-16 15:42:28.083904",
+ "modified": "2024-08-16 21:07:43.336214",
  "modified_by": "Administrator",
  "module": "Booking",
  "name": "Booking",

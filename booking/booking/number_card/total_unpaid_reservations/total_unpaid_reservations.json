@@ -1,0 +1,22 @@
+{
+ "aggregate_function_based_on": "total_price",
+ "creation": "2024-08-16 21:23:14.989342",
+ "docstatus": 0,
+ "doctype": "Number Card",
+ "document_type": "Reservation",
+ "filters_json": "[[\"Reservation\",\"payment_status\",\"!=\",\"Paid\",false]]",
+ "function": "Sum",
+ "idx": 0,
+ "is_public": 1,
+ "is_standard": 1,
+ "label": "Total Unpaid Reservations",
+ "modified": "2024-08-16 21:33:16.792772",
+ "modified_by": "Administrator",
+ "module": "Booking",
+ "name": "Total Unpaid Reservations",
+ "owner": "Administrator",
+ "report_function": "Sum",
+ "show_percentage_stats": 1,
+ "stats_time_interval": "Daily",
+ "type": "Document Type"
+}
