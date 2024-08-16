@@ -14,6 +14,7 @@
   "category",
   "price",
   "max_capacity",
+  "total_price",
   "service_add_ons_section",
   "add_ons"
  ],
@@ -76,11 +77,20 @@
    "fieldtype": "Table",
    "label": "Add Ons",
    "options": "Booking Service Add-ons"
+  },
+  {
+   "default": "0",
+   "description": "Price including add-ons ",
+   "fieldname": "total_price",
+   "fieldtype": "Float",
+   "label": "Total Price",
+   "non_negative": 1,
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-08-15 23:05:31.239918",
+ "modified": "2024-08-16 15:20:10.621904",
  "modified_by": "Administrator",
  "module": "Booking",
  "name": "Booking Service",

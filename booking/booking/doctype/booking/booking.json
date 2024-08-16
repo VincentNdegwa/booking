@@ -74,14 +74,14 @@
    "fieldname": "status",
    "fieldtype": "Select",
    "label": "Status",
-   "options": "New\nConfirmed\nPending\nCancelled",
+   "options": "New\nLate\nConfirmed\nPending\nCancelled",
    "reqd": 1
   },
   {
    "fieldname": "payment_status",
    "fieldtype": "Select",
    "label": "Payment Status",
-   "options": "Paid\nUnpaid\npending",
+   "options": "Paid\nUnpaid\nPending",
    "reqd": 1
   },
   {
@@ -107,7 +107,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-08-15 22:27:59.103603",
+ "modified": "2024-08-16 15:42:28.083904",
  "modified_by": "Administrator",
  "module": "Booking",
  "name": "Booking",

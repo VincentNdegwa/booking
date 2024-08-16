@@ -1,0 +1,47 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-08-16 16:29:39.899483",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "service_name",
+  "column_break_soet",
+  "service_price"
+ ],
+ "fields": [
+  {
+   "fieldname": "service_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Service Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_soet",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0.0",
+   "fieldname": "service_price",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Service Price",
+   "non_negative": 1,
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-08-16 16:30:24.074833",
+ "modified_by": "Administrator",
+ "module": "Booking",
+ "name": "Reservation Service",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

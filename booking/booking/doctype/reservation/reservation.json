@@ -1,0 +1,134 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:APTM-{client}-{###}",
+ "creation": "2024-08-16 16:20:48.666549",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_hxf6",
+  "amended_from",
+  "client",
+  "reservation_date",
+  "duration",
+  "reservation_status",
+  "column_break_fxgj",
+  "payment_status",
+  "special_requests",
+  "total_price",
+  "reservation_services_section",
+  "services"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_hxf6",
+   "fieldtype": "Section Break",
+   "label": "Reservation Details"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Reservation",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "client",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Client",
+   "options": "Booking Client",
+   "reqd": 1
+  },
+  {
+   "fieldname": "reservation_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Reservation Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "duration",
+   "fieldtype": "Duration",
+   "in_list_view": 1,
+   "label": "Duration",
+   "reqd": 1
+  },
+  {
+   "default": "Pending",
+   "fieldname": "reservation_status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Reservation Status",
+   "options": "Confirmed\nPending\nCancelled",
+   "reqd": 1
+  },
+  {
+   "default": "Unpaid",
+   "fieldname": "payment_status",
+   "fieldtype": "Select",
+   "label": "Payment Status",
+   "options": "Paid\nUnpaid\nPending"
+  },
+  {
+   "fieldname": "special_requests",
+   "fieldtype": "Small Text",
+   "label": "Special Requests"
+  },
+  {
+   "fieldname": "column_break_fxgj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "reservation_services_section",
+   "fieldtype": "Section Break",
+   "label": "Reservation Services"
+  },
+  {
+   "fieldname": "services",
+   "fieldtype": "Table",
+   "label": "Services",
+   "options": "Reservation Service"
+  },
+  {
+   "fieldname": "total_price",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Total Price",
+   "non_negative": 1,
+   "options": "0.0",
+   "read_only": 1,
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-08-16 16:33:45.814720",
+ "modified_by": "Administrator",
+ "module": "Booking",
+ "name": "Reservation",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
