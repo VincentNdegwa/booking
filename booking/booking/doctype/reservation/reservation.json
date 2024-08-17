@@ -108,7 +108,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-08-16 21:18:32.917712",
+ "modified": "2024-08-17 22:11:33.806424",
  "modified_by": "Administrator",
  "module": "Booking",
  "name": "Reservation",
@@ -127,6 +127,15 @@
    "share": 1,
    "submit": 1,
    "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Workspace Manager",
+   "share": 1
   }
  ],
  "sort_field": "creation",
