@@ -17,7 +17,6 @@
   "column_break_wjma",
   "payment_status",
   "service",
-  "edit_price",
   "total_amount",
   "notes",
   "is_published",
@@ -54,6 +53,7 @@
    "fieldtype": "Datetime",
    "in_list_view": 1,
    "label": "Booking Date",
+   "options": "Now",
    "reqd": 1
   },
   {
@@ -84,6 +84,7 @@
    "reqd": 1
   },
   {
+   "default": "Unpaid",
    "fieldname": "payment_status",
    "fieldtype": "Select",
    "label": "Payment Status",
@@ -97,7 +98,6 @@
    "fieldtype": "Float",
    "label": "Total Amount",
    "non_negative": 1,
-   "read_only_depends_on": "eval: doc.edit_price == false",
    "reqd": 1
   },
   {
@@ -110,12 +110,6 @@
    "fieldname": "notes",
    "fieldtype": "Text",
    "label": "Notes"
-  },
-  {
-   "default": "0",
-   "fieldname": "edit_price",
-   "fieldtype": "Check",
-   "label": "Edit Price"
   },
   {
    "default": "0",
@@ -136,7 +130,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-08-18 16:18:00.129734",
+ "modified": "2024-08-18 17:39:57.861242",
  "modified_by": "Administrator",
  "module": "Booking",
  "name": "Booking",

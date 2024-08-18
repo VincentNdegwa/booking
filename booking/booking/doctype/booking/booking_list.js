@@ -23,6 +23,12 @@ frappe.listview_settings["Booking"] = {
 			`;
 
 			return `<div class="pill" style="${style}">${date.fromNow()}</div>`;
-		},
+        },
+        
+        booking_date(value, df, doc) {
+            if (!value) return "";
+            const date = moment(value);
+            return date.fromNow()
+        }
 	},
 };
