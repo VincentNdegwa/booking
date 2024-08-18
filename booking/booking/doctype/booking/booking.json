@@ -119,6 +119,7 @@
    "read_only": 1
   },
   {
+   "allow_on_submit": 1,
    "default": "New",
    "fieldname": "booking_status",
    "fieldtype": "Select",
@@ -131,7 +132,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-08-18 18:20:53.146320",
+ "modified": "2024-08-18 21:51:27.360263",
  "modified_by": "Administrator",
  "module": "Booking",
  "name": "Booking",

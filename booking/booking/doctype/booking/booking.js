@@ -7,6 +7,13 @@ frappe.ui.form.on("Booking", {
 			frm.set_value("booking_date", frappe.datetime.now_datetime());
 		}
 	},
+
+	before_submit(frm) {
+		if (frm.doc.payment_status !== "Paid") {
+			frappe.throw(__("Please pay the booking amount before submitting the booking."));
+			return false;
+		}
+	},
 	validate(frm) {
 		const booking_date = frm.doc.booking_date;
 		const start_time = frm.doc.start_time;
