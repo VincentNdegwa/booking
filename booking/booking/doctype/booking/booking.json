@@ -13,7 +13,7 @@
   "booking_date",
   "start_date",
   "end_date",
-  "status",
+  "booking_status",
   "column_break_wjma",
   "payment_status",
   "service",
@@ -77,13 +77,6 @@
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "status",
-   "fieldtype": "Select",
-   "label": "Booking Status",
-   "options": "New\nLate\nConfirmed\nPending\nCancelled\nAttended",
-   "reqd": 1
-  },
-  {
    "default": "Unpaid",
    "fieldname": "payment_status",
    "fieldtype": "Select",
@@ -124,13 +117,21 @@
    "no_copy": 1,
    "print_hide": 1,
    "read_only": 1
+  },
+  {
+   "default": "New",
+   "fieldname": "booking_status",
+   "fieldtype": "Select",
+   "label": "Booking Status",
+   "options": "New\nLate\nConfirmed\nPending\nCancelled\nAttended",
+   "reqd": 1
   }
  ],
  "has_web_view": 1,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-08-18 17:39:57.861242",
+ "modified": "2024-08-18 18:20:53.146320",
  "modified_by": "Administrator",
  "module": "Booking",
  "name": "Booking",

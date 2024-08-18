@@ -12,7 +12,7 @@ frappe.ui.form.on("Booking", {
 		const start_time = frm.doc.start_time;
 		const end_time = frm.doc.end_time;
 		const now = frappe.datetime.now_datetime();
-		if (booking_date > now) {
+		if (booking_date >= now) {
 			frappe.msgprint(__("Booking date cannot be in the future"));
 			frappe.validated = false;
 		}

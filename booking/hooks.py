@@ -133,23 +133,21 @@ app_license = "mit"
 # Scheduled Tasks
 # ---------------
 
-# scheduler_events = {
-# 	"all": [
-# 		"booking.tasks.all"
-# 	],
-# 	"daily": [
-# 		"booking.tasks.daily"
-# 	],
-# 	"hourly": [
-# 		"booking.tasks.hourly"
-# 	],
-# 	"weekly": [
-# 		"booking.tasks.weekly"
-# 	],
-# 	"monthly": [
-# 		"booking.tasks.monthly"
-# 	],
-# }
+scheduler_events = {
+    "all": ["booking.booking.events.shedule_events.update_late_bookings"],
+    # 	"daily": [
+    # 		"booking.tasks.daily"
+    # 	],
+    # 	"hourly": [
+    # 		"booking.tasks.hourly"
+    # 	],
+    # 	"weekly": [
+    # 		"booking.tasks.weekly"
+    # 	],
+    # 	"monthly": [
+    # 		"booking.tasks.monthly"
+    # 	],
+}
 
 # Testing
 # -------
