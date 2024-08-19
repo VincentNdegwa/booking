@@ -1,6 +1,15 @@
 // Copyright (c) 2024, vincent and contributors
 // For license information, please see license.txt
 
+function update_booking_status(frm) {
+	const now = frappe.datetime.now_datetime();
+	const start_date = frm.doc.start_date;
+	if (start_date <= now) {
+		frm.set_value({
+			booking_status: "Late",
+		});
+	}
+}
 frappe.ui.form.on("Booking", {
 	setup(frm) {
 		if (!frm.doc.booking_date) {
@@ -13,6 +22,12 @@ frappe.ui.form.on("Booking", {
 			frappe.throw(__("Please pay the booking amount before submitting the booking."));
 			return false;
 		}
+	},
+	setup(frm) {
+		update_booking_status(frm);
+	},
+	refresh(frm) {
+		update_booking_status(frm);
 	},
 	validate(frm) {
 		const booking_date = frm.doc.booking_date;
