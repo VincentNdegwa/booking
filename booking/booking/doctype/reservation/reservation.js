@@ -10,6 +10,12 @@ function calculate_reservation_price(frm) {
 
 frappe.ui.form.on("Reservation", {
 	refresh(frm) {},
+	before_submit(frm) {
+		if (frm.doc.payment_status != "Paid") {
+			frappe.throw(__("The reservation is unpaid, please pay first before submitting!"));
+			return false;
+		}
+	},
 });
 
 frappe.ui.form.on("Reservation Service", {
