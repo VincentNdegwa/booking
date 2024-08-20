@@ -21,6 +21,31 @@ frappe.ui.form.on("Reservation", {
 			frappe.throw(__("The reservation is unpaid, please pay first before submitting!"));
 			return false;
 		}
+		
+		if (frm.doc.booked == 0) {
+			frappe.call({
+				method: "booking.booking.doctype.booking.booking.create_booking_from_reservation",
+				args: {
+					client: frm.doc.client,
+					reservation_date: frm.doc.reservation_date,
+					total_amount: frm.doc.total_amount,
+					service: frm.doc.service,
+					name: frm.doc.name,
+				},
+				callback: function (r) {
+					if (r.message.status) {
+						frappe.msgprint(
+							__("The reservation has been successfully converted to a booking.")
+						);
+						frm.set_value("booked", 1);
+						frm.save();
+					} else {
+						frappe.throw(__("Failed to convert the reservation to a booking."));
+					}
+					console.log(r);
+				},
+			});
+		}
 	},
 	service_price(frm) {
 		calculate_reservation_price(frm);

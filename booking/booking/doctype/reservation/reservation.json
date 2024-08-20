@@ -17,6 +17,7 @@
   "special_requests",
   "service",
   "service_price",
+  "booked",
   "reservations_payments_section",
   "payments",
   "section_break_uepv",
@@ -151,12 +152,19 @@
    "label": "Service Price",
    "non_negative": 1,
    "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "booked",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Booked"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-08-20 14:50:51.192939",
+ "modified": "2024-08-20 22:11:11.875337",
  "modified_by": "Administrator",
  "module": "Booking",
  "name": "Reservation",

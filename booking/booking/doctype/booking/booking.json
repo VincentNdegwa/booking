@@ -20,7 +20,8 @@
   "total_amount",
   "notes",
   "is_published",
-  "route"
+  "route",
+  "reservation"
  ],
  "fields": [
   {
@@ -61,16 +62,14 @@
    "fieldname": "start_date",
    "fieldtype": "Datetime",
    "in_list_view": 1,
-   "label": "Start Date",
-   "reqd": 1
+   "label": "Start Date"
   },
   {
    "description": "When the booking ends",
    "fieldname": "end_date",
    "fieldtype": "Datetime",
    "in_list_view": 1,
-   "label": "End Date",
-   "reqd": 1
+   "label": "End Date"
   },
   {
    "fieldname": "column_break_wjma",
@@ -126,13 +125,21 @@
    "label": "Booking Status",
    "options": "New\nLate\nConfirmed\nPending\nCancelled\nAttended",
    "reqd": 1
+  },
+  {
+   "fieldname": "reservation",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Reservation",
+   "no_copy": 1,
+   "unique": 1
   }
  ],
  "has_web_view": 1,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-08-18 21:51:27.360263",
+ "modified": "2024-08-20 22:11:48.389868",
  "modified_by": "Administrator",
  "module": "Booking",
  "name": "Booking",
