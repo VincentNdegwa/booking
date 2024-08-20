@@ -16,7 +16,13 @@
   "payment_status",
   "special_requests",
   "total_price",
-  "service"
+  "service",
+  "reservations_payments_section",
+  "payments",
+  "section_break_uepv",
+  "balance_remaining",
+  "column_break_scrq",
+  "total_amount_paid"
  ],
  "fields": [
   {
@@ -97,12 +103,41 @@
    "fieldtype": "Link",
    "label": "Service",
    "options": "Booking Service"
+  },
+  {
+   "fieldname": "reservations_payments_section",
+   "fieldtype": "Section Break",
+   "label": "Reservations Payments"
+  },
+  {
+   "fieldname": "payments",
+   "fieldtype": "Table",
+   "label": "Payments",
+   "options": "Reservation Payment History"
+  },
+  {
+   "fieldname": "section_break_uepv",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "total_amount_paid",
+   "fieldtype": "Float",
+   "label": "Total Amount Paid"
+  },
+  {
+   "fieldname": "balance_remaining",
+   "fieldtype": "Float",
+   "label": "Balance Remaining"
+  },
+  {
+   "fieldname": "column_break_scrq",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-08-20 13:32:42.960319",
+ "modified": "2024-08-20 14:04:22.959305",
  "modified_by": "Administrator",
  "module": "Booking",
  "name": "Reservation",
