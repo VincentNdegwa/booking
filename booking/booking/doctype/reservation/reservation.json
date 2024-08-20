@@ -16,8 +16,7 @@
   "payment_status",
   "special_requests",
   "total_price",
-  "reservation_services_section",
-  "services"
+  "service"
  ],
  "fields": [
   {
@@ -84,17 +83,6 @@
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "reservation_services_section",
-   "fieldtype": "Section Break",
-   "label": "Reservation Services"
-  },
-  {
-   "fieldname": "services",
-   "fieldtype": "Table",
-   "label": "Services",
-   "options": "Reservation Service"
-  },
-  {
    "default": "0.0",
    "fieldname": "total_price",
    "fieldtype": "Float",
@@ -103,12 +91,18 @@
    "non_negative": 1,
    "read_only": 1,
    "reqd": 1
+  },
+  {
+   "fieldname": "service",
+   "fieldtype": "Link",
+   "label": "Service",
+   "options": "Booking Service"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-08-19 20:49:24.520737",
+ "modified": "2024-08-20 13:32:42.960319",
  "modified_by": "Administrator",
  "module": "Booking",
  "name": "Reservation",

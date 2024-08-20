@@ -18,8 +18,8 @@ frappe.ui.form.on("Reservation", {
 	},
 });
 
-frappe.ui.form.on("Reservation Service", {
-	service_price(frm, cdt, cdn) {
-		calculate_reservation_price(frm);
-	},
+frappe.ui.form.on("Reservation Payment History", {
+	// service_price(frm, cdt, cdn) {
+	// 	calculate_reservation_price(frm);
+	// },
 });
