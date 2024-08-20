@@ -15,14 +15,16 @@
   "column_break_fxgj",
   "payment_status",
   "special_requests",
-  "total_price",
   "service",
+  "service_price",
   "reservations_payments_section",
   "payments",
   "section_break_uepv",
-  "balance_remaining",
+  "total_amount",
   "column_break_scrq",
-  "total_amount_paid"
+  "total_amount_paid",
+  "column_break_qwal",
+  "balance_remaining"
  ],
  "fields": [
   {
@@ -50,15 +52,16 @@
   },
   {
    "fieldname": "reservation_date",
-   "fieldtype": "Date",
+   "fieldtype": "Datetime",
    "in_list_view": 1,
    "label": "Reservation Date",
    "reqd": 1
   },
   {
+   "description": "After how long will the reservation be due?",
    "fieldname": "duration",
    "fieldtype": "Duration",
-   "label": "Duration",
+   "label": "Reservation Duration",
    "reqd": 1
   },
   {
@@ -89,16 +92,6 @@
    "fieldtype": "Column Break"
   },
   {
-   "default": "0.0",
-   "fieldname": "total_price",
-   "fieldtype": "Float",
-   "in_preview": 1,
-   "label": "Total Price",
-   "non_negative": 1,
-   "read_only": 1,
-   "reqd": 1
-  },
-  {
    "fieldname": "service",
    "fieldtype": "Link",
    "label": "Service",
@@ -120,24 +113,50 @@
    "fieldtype": "Section Break"
   },
   {
+   "default": "0.0",
    "fieldname": "total_amount_paid",
    "fieldtype": "Float",
-   "label": "Total Amount Paid"
+   "label": "Total Amount Paid",
+   "read_only": 1
   },
   {
+   "default": "0.0",
    "fieldname": "balance_remaining",
    "fieldtype": "Float",
-   "label": "Balance Remaining"
+   "label": "Balance Remaining",
+   "read_only": 1
   },
   {
    "fieldname": "column_break_scrq",
    "fieldtype": "Column Break"
+  },
+  {
+   "default": "0.0",
+   "fieldname": "total_amount",
+   "fieldtype": "Float",
+   "label": "Total Amount",
+   "non_negative": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_qwal",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0.0",
+   "fetch_from": "service.total_price",
+   "fieldname": "service_price",
+   "fieldtype": "Float",
+   "in_preview": 1,
+   "label": "Service Price",
+   "non_negative": 1,
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-08-20 14:04:22.959305",
+ "modified": "2024-08-20 14:50:51.192939",
  "modified_by": "Administrator",
  "module": "Booking",
  "name": "Reservation",
