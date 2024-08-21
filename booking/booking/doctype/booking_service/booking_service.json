@@ -7,6 +7,7 @@
  "engine": "InnoDB",
  "field_order": [
   "service_details_section",
+  "service_image",
   "service_name",
   "description",
   "duration",
@@ -86,11 +87,17 @@
    "label": "Total Price",
    "non_negative": 1,
    "read_only": 1
+  },
+  {
+   "fieldname": "service_image",
+   "fieldtype": "Attach Image",
+   "label": "Service Image"
   }
  ],
+ "image_field": "service_image",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-08-16 15:20:10.621904",
+ "modified": "2024-08-21 15:36:46.764246",
  "modified_by": "Administrator",
  "module": "Booking",
  "name": "Booking Service",

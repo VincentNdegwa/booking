@@ -15,7 +15,7 @@ function calculate_reservation_price(frm) {
 
 frappe.ui.form.on("Reservation", {
 	refresh(frm) {
-		calculate_reservation_price(frm);
+		// calculate_reservation_price(frm);
 	},
 	before_submit(frm) {
 		if (frm.doc.payment_status != "Paid") {
