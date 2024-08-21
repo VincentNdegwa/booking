@@ -123,7 +123,7 @@
    "fieldname": "booking_status",
    "fieldtype": "Select",
    "label": "Booking Status",
-   "options": "New\nLate\nConfirmed\nPending\nCancelled\nAttended",
+   "options": "New\nReserved\nLate\nConfirmed\nPending\nCancelled\nAttended",
    "reqd": 1
   },
   {
@@ -139,7 +139,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-08-20 22:11:48.389868",
+ "modified": "2024-08-21 13:07:51.426150",
  "modified_by": "Administrator",
  "module": "Booking",
  "name": "Booking",

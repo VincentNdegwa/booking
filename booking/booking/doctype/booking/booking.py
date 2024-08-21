@@ -20,6 +20,7 @@ def create_booking_from_reservation(client, reservation_date, total_amount, serv
         new_booking.total_amount = total_amount
         new_booking.service = service
         new_booking.reservation = name
+        new_booking.booking_status = "Reserved"
         new_booking.insert()
         return {"status": True, "message": "Booking Created"}
     except:
