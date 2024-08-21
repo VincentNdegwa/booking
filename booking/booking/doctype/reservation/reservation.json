@@ -123,7 +123,7 @@
   {
    "default": "0.0",
    "fieldname": "balance_remaining",
-   "fieldtype": "Float",
+   "fieldtype": "Data",
    "label": "Balance Remaining",
    "read_only": 1
   },
@@ -164,7 +164,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-08-20 22:11:11.875337",
+ "modified": "2024-08-21 15:07:33.662462",
  "modified_by": "Administrator",
  "module": "Booking",
  "name": "Reservation",
